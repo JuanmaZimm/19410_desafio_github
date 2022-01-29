@@ -1,0 +1,420 @@
+/* sintaxis de CSS
+selector{
+    propiedad: valor;
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+header{ 
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    font-family: 'Comfortaa', cursive;
+}
+
+header div{
+    height: 100px;
+    width: 100%;
+}
+
+header div img{
+    width: 80px;
+    height: 80px;
+}
+
+header div{
+    color: #2E3A59;
+    background-color: #FCDDEC;    
+    font-size: 32px;
+    
+}
+
+nav{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #EF5DA8;
+    height: 144px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 28px;
+    padding-top: 57px;
+}
+
+
+/*footer*/
+footer{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    background-color: #EF5DA8;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+footer ul li{
+    margin-left: 25px;
+}
+
+footer ul li img{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+footer p{
+    align-self: flex-start;
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+}
+
+
+/*index*/
+
+.index__main{
+    display: grid;
+    grid-template-areas:
+    "carrusel"
+    "porQue"
+    "ad"
+    "studio"
+    "destacados";
+    grid-template-columns: 100%;
+    grid-row-gap: 50px;
+    align-items: center;
+}
+
+/*carrusel*/
+.carrusel img{
+    grid-area: carrusel;
+    width: 100%;
+    height: 716px;
+}
+
+/*porQue*/
+.porQue{
+    grid-area: porQue;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.porQue__text{
+    display: flex;
+    flex-direction: column;
+    width: 56%;
+}
+
+.porQue h3{
+    font-size: 48px;
+}
+
+.porQue p{
+    text-align: justify;
+    font-size: 24px;
+}
+
+.porQue img{
+    width: 36%;
+}
+
+/*ad*/
+
+.ad{
+    grid-area: ad;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    height: 90%;
+    color: #FFFFFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 300%;
+    text-align: center;
+    background-color: #FCDDEC;
+    border-style: solid;
+    border-width: 3px;
+    border-color:#EF5DA8;
+    padding-top: 28px;
+}
+
+/*studio*/
+.studio{
+    grid-area: studio;
+    font-family: 'Comfortaa', cursive;
+    font-size: 300%;
+    text-align: center;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.studio__p{
+    width: 30%;
+    height: 100%;
+}
+
+.studio img{
+    width: 30%;
+}
+
+/*destacados*/
+
+.destacados{
+    justify-self: center;
+    grid-area: destacados;
+    font-family: 'Comfortaa', cursive;
+    width: 90%;
+}
+
+.destacados h3{    
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.destacados ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.destacados ul li{
+    width: 20%;
+    list-style: none;
+    background-color: #A5A6F6;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.destacados ul li h4{
+    font-size: 36;
+    text-align: center;
+}
+
+.destacados ul li p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.destacados img {
+    margin-top: 33px;
+    margin-left: 36px;
+    margin-right: 36px;
+    width: 80%;
+    height: 200px;
+}
+
+/*contacto*/
+.contacto__form{
+    color: #EF5DA8;
+    font-family: 'Comfortaa', cursive;
+    margin: 50px 50px 50px 50px;
+    background-color: #FCDDEC;
+    border-style: solid;
+    border-width: 3px;
+    border-color:#EF5DA8;
+    padding: 25px 25px 25px 25px;
+}
+
+.contacto__form__title{
+    font-size: 48px;
+}
+
+.contacto__form div{
+    margin-bottom: 10px;
+}
+
+.contacto__form__nombre{
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.contacto__form__apellido{
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+/*FAQ*/
+.faq{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 10px;
+}
+
+.faq h2{
+    color: #EF5DA8;
+    margin: 25px;
+}
+
+.faq div{
+    color: #EF5DA8;
+    margin: 25px 25px 25px 25px;
+    background-color: #FCDDEC;
+    border-style: solid;
+    border-width: 3px;
+    border-color:#EF5DA8;
+    padding: 25px 25px 25px 25px;
+}
+
+/*ropa*/
+
+.ropa__main{
+    display: grid;
+    grid-template-areas:
+    "filtros titulo"
+    "filtros productos";
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 50px 1080px;
+    grid-row-gap: 50px;
+}
+
+.filtro{
+    grid-area: filtros;
+    font-family: 'Comfortaa', cursive;
+    color: #EF5DA8;
+    background-color: #FCDDEC;
+    border-style: solid;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-width: 3px;
+    border-color:#EF5DA8;
+    padding: 25px 25px 25px 25px;
+}
+
+.filtro h3{
+    font-size: 48px;
+}
+
+.filtro h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.filtro ul li{
+    list-style: none;
+}
+
+.filtro ul li ul li{
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.ropa__main h3{
+    grid-area: titulo;
+    font-size: 48px;
+    margin: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.products{
+    grid-area: productos;
+    font-family: 'Comfortaa', cursive;
+    
+    overflow: auto;
+}
+
+.products ul div{
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    margin: 25px 25px 25px 25px;
+    background-color: #FCDDEC;
+    border-style: solid;
+    border-width: 3px;
+    border-color:#EF5DA8;
+
+}
+
+.products ul div p{
+    text-align: center;
+}
+
+.products ul div img{
+    width: 180px;
+    height: 300px;
+    margin: 10px 10px;
+}
+
+/*tiendas*/
+
+.infoTiendas{
+    font-family: 'Comfortaa', cursive;
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.infoTiendas__text{
+    width: 734px;
+}
+
+.infoTiendas div img{
+    width: 672px;
+    height: 384px;
+}
+
+.infoEmpleados{
+    display: inline-block;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 25px;
+}
+
+.infoEmpleados__text{
+    width: 734px;
+}
+
+.infoEmpleados div img{
+    width: 672px;
+    height: 384px;
+}
+
+.encuentraTienda{
+    font-family: 'Comfortaa', cursive;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    color: #EF5DA8;
+    background-color: #FCDDEC;
+    border-style: solid;
+    border-width: 3px;
+    border-color:#EF5DA8;
+    padding: 25px 25px 25px 25px;
+}
+
+.encuentraTienda img{
+    width: 95%;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
