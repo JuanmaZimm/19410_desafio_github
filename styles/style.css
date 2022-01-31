@@ -68,13 +68,13 @@ footer ul{
 
 footer ul li{
     margin-left: 25px;
-    transition: rotate 2s;
 }
 
 footer ul li img{
     width: 50px;
     height: 50px;
-    margin-top: 25px;
+    margin-top: 25px;    
+    transition: all 0.5s;
 }
 
 footer p{
@@ -85,8 +85,9 @@ footer p{
 }
 
 
-footer ul li:hover{
-    transform: rotate(360deg);
+footer ul li img:hover{
+    height: 60px;
+    width: 60px;
 }
 /*index*/
 
